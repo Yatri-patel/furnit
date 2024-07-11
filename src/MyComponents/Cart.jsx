@@ -8,11 +8,13 @@ import { Link } from 'react-router-dom'
 import CartCounter from './CartCounter'
 import { CartContext } from './CartContext';
 
-export default function Cart(props) {
+
+export default function Cart() {
 
     const { cartItems, removeFromCart } = useContext(CartContext);
-// Calculate the subtotal
-const subtotal = cartItems.reduce((total, item) => total + item.price, 0);
+
+    // Calculate the subtotal
+    const subtotal = cartItems.reduce((total, item) => total + item.price, 0);
 
     return (
 
@@ -43,11 +45,13 @@ const subtotal = cartItems.reduce((total, item) => total + item.price, 0);
                                                     </div>
 
                                                     <div className="col-4 counter pl-5">
+
                                                         <CartCounter price={item.price} />
+
                                                     </div>
                                                     {/* 
                                                     <div className="col-2">
-                                            
+
                                                     </div> */}
                                                     {/* Delete */}
                                                     <div className="col-2 del-btn">
@@ -97,7 +101,8 @@ const subtotal = cartItems.reduce((total, item) => total + item.price, 0);
                                             <p>Subtotal</p>
                                         </div>
                                         <div className="col-4 py-3 checkout-price">
-                                        <h6>${subtotal.toFixed(2)}</h6>
+
+                                            <h6>${subtotal.toFixed(2)}</h6>
                                         </div>
                                         <div className="col-12">
                                             <input className='cart-total-input py-2 px-4' type="text" placeholder='Your Voucher' />  <button class='btn btn-dark apply btn' type="button" >Apply</button>
@@ -110,7 +115,7 @@ const subtotal = cartItems.reduce((total, item) => total + item.price, 0);
                                             <p>Total</p>
                                         </div>
                                         <div className="col-4 checkout-price cart-total-h6">
-                                               <h6>${subtotal.toFixed(2)}</h6>
+                                            <h6>${subtotal.toFixed(2)}</h6>
                                         </div>
 
                                         <Link to="/checkout">

@@ -20,7 +20,7 @@ export default function Carousel_one() {
         <>
 
             <Carousel>
-                
+
                 <Carousel.Item>
                     <Container>
                         <Row>
@@ -32,7 +32,14 @@ export default function Carousel_one() {
                                             New
                                         </Badge>
                                         <img src={r1_c1} class="d-block w-100" alt="..." />
-                                        <h3>TeakWood Chair</h3>
+                                        <div className="row">
+                                            <div className="col-9">
+                                                <h3>TeakWood Chair</h3>
+                                            </div>
+                                            <div className="col-3">
+                                                <h5>$24</h5>
+                                            </div>
+                                        </div>
                                         <Badge className="position-absolute bottom-20 start-0 bg-dark large-badge">
                                             Living Room
                                         </Badge>
@@ -49,7 +56,15 @@ export default function Carousel_one() {
                                             New
                                         </Badge>
                                         <img src={r1_c2} class="d-block w-100" alt="..." />
-                                        <h3>Black Chair</h3>
+
+                                        <div className="row">
+                                            <div className="col-9">
+                                                <h3>Black Chair </h3>
+                                            </div>
+                                            <div className="col-3">
+                                                <h5>$24</h5>
+                                            </div>
+                                        </div>
                                         <Badge className="position-absolute bottom-20 start-0 bg-dark large-badge">
                                             Living Room
                                         </Badge>
@@ -69,7 +84,15 @@ export default function Carousel_one() {
                                             New
                                         </Badge>
                                         <img src={r1_c3} class="d-block w-100" alt="..." />
-                                        <h3>Stool Table</h3>
+
+                                        <div className="row">
+                                            <div className="col-9">
+                                                <h3>Stool Table </h3>
+                                            </div>
+                                            <div className="col-3">
+                                                <h5>$24</h5>
+                                            </div>
+                                        </div>
                                         <Badge className="position-absolute bottom-20 start-0 bg-dark">
                                             Living Room
                                         </Badge>
@@ -86,7 +109,15 @@ export default function Carousel_one() {
                                             New
                                         </Badge>
                                         <img src={r1_c4} class="d-block w-100" alt="..." />
-                                        <h3>Cafe Chair</h3>
+
+                                        <div className="row">
+                                            <div className="col-9">
+                                                <h3>Cafe Chair </h3>
+                                            </div>
+                                            <div className="col-3">
+                                                <h5>$24</h5>
+                                            </div>
+                                        </div>
                                         <Badge className="position-absolute bottom-20 start-0 bg-dark large-badge">
                                             Living Room
                                         </Badge>
@@ -108,7 +139,15 @@ export default function Carousel_one() {
                                             New
                                         </Badge>
                                         <img src={r2_c1} class="d-block w-100" alt="..." />
-                                        <h3>White Chair</h3>
+
+                                        <div className="row">
+                                            <div className="col-9">
+                                                <h3>White Chair </h3>
+                                            </div>
+                                            <div className="col-3">
+                                                <h5>$24</h5>
+                                            </div>
+                                        </div>
                                         <Badge className="position-absolute bottom-20 start-0 bg-dark large-badge">
                                             Living Room
                                         </Badge>
@@ -125,7 +164,14 @@ export default function Carousel_one() {
                                             New
                                         </Badge>
                                         <img src={r2_c2} class="d-block w-100" alt="..." />
-                                        <h3>Black Chair</h3>
+                                        <div className="row">
+                                            <div className="col-9">
+                                                <h3>Black Chair </h3>
+                                            </div>
+                                            <div className="col-3">
+                                                <h5>$24</h5>
+                                            </div>
+                                        </div>
                                         <Badge className="position-absolute bottom-20 start-0 bg-dark large-badge">
                                             Living Room
                                         </Badge>
@@ -143,7 +189,15 @@ export default function Carousel_one() {
                                             New
                                         </Badge>
                                         <img src={r2_c3} class="d-block w-100" alt="..." />
-                                        <h3>Pink Chair</h3>
+                                        <div className="row">
+                                            <div className="col-9">
+                                                <h3>Pink Chair</h3>
+                                            </div>
+                                            <div className="col-3">
+                                                <h5>$24</h5>
+                                            </div>
+                                        </div>
+
 
                                         {/* Living Room Badge */}
                                         <Badge className="position-absolute bottom-20 start-0 bg-dark large-badge">
@@ -162,7 +216,15 @@ export default function Carousel_one() {
                                             New
                                         </Badge>
                                         <img src={r2_c4} class="d-block w-100" alt="..." />
-                                        <h3>Green Chair</h3>
+
+                                        <div className="row">
+                                            <div className="col-9">
+                                                <h3>Green Chair </h3>
+                                            </div>
+                                            <div className="col-3">
+                                                <h5>$24</h5>
+                                            </div>
+                                        </div>
                                         <Badge className="position-absolute bottom-20 start-0 bg-dark large-badge">
                                             Living Room
                                         </Badge>
@@ -185,7 +247,15 @@ export default function Carousel_one() {
                                             New
                                         </Badge>
                                         <img src={r1_c1} class=" pos_relative pos_relative d-block w-100" alt="..." />
-                                        <h3>TeakWood Chair</h3>
+
+                                        <div className="row">
+                                            <div className="col-9">
+                                                <h3>Teakwood Chair </h3>
+                                            </div>
+                                            <div className="col-3">
+                                                <h5>$24</h5>
+                                            </div>
+                                        </div>
                                         <Badge className="position-absolute bottom-20 start-0 bg-dark large-badge">
                                             Living Room
                                         </Badge>
@@ -202,7 +272,15 @@ export default function Carousel_one() {
                                             New
                                         </Badge>
                                         <img src={r1_c2} class="d-block w-100" alt="..." />
-                                        <h3>Black Chair</h3>
+
+                                        <div className="row">
+                                            <div className="col-9">
+                                                <h3>Black Chair </h3>
+                                            </div>
+                                            <div className="col-3">
+                                                <h5>$24</h5>
+                                            </div>
+                                        </div>
                                         <Badge className="position-absolute bottom-20 start-0 bg-dark large-badge">
                                             Living Room
                                         </Badge>
@@ -218,7 +296,15 @@ export default function Carousel_one() {
                                             New
                                         </Badge>
                                         <img src={r1_c3} class="d-block w-100" alt="..." />
-                                        <h3>Stool/Table</h3>
+
+                                        <div className="row">
+                                            <div className="col-9">
+                                                <h3>Stool/Table </h3>
+                                            </div>
+                                            <div className="col-3">
+                                                <h5>$24</h5>
+                                            </div>
+                                        </div>
                                         <Badge className="position-absolute bottom-20 start-0 bg-dark large-badge">
                                             Living Room
                                         </Badge>
@@ -234,7 +320,15 @@ export default function Carousel_one() {
                                             New
                                         </Badge>
                                         <img src={r1_c4} class="d-block w-100" alt="..." />
-                                        <h3>Cafe Chair</h3>
+
+                                        <div className="row">
+                                            <div className="col-9">
+                                                <h3>Cafe Chair </h3>
+                                            </div>
+                                            <div className="col-3">
+                                                <h5>$24</h5>
+                                            </div>
+                                        </div>
                                         <Badge className="position-absolute bottom-20 start-0 bg-dark large-badge">
                                             Living Room
                                         </Badge>
@@ -252,7 +346,15 @@ export default function Carousel_one() {
                                             New
                                         </Badge>
                                         <img src={r2_c1} class="d-block w-100" alt="..." />
-                                        <h3>White Chair</h3>
+
+                                        <div className="row">
+                                            <div className="col-9">
+                                                <h3>White Chair </h3>
+                                            </div>
+                                            <div className="col-3">
+                                                <h5>$24</h5>
+                                            </div>
+                                        </div>
                                         <Badge className="position-absolute bottom-20 start-0 bg-dark large-badge">
                                             Living Room
                                         </Badge>
@@ -268,7 +370,14 @@ export default function Carousel_one() {
                                             New
                                         </Badge>
                                         <img src={r2_c2} class="d-block w-100" alt="..." />
-                                        <h3>Black Chair</h3>
+                                        <div className="row">
+                                            <div className="col-9">
+                                                <h3>Black Chair </h3>
+                                            </div>
+                                            <div className="col-3">
+                                                <h5>$24</h5>
+                                            </div>
+                                        </div>
                                         <Badge className="position-absolute bottom-20 start-0 bg-dark large-badge">
                                             Living Room
                                         </Badge>
@@ -285,7 +394,14 @@ export default function Carousel_one() {
                                         </Badge>
 
                                         <img src={r2_c3} class="d-block w-100" alt="..." />
-                                        <h3>Pink Chair</h3>
+                                        <div className="row">
+                                            <div className="col-9">
+                                                <h3>Pink Chair </h3>
+                                            </div>
+                                            <div className="col-3">
+                                                <h5>$24</h5>
+                                            </div>
+                                        </div>
                                         <Badge className="position-absolute bottom-20 start-0 bg-dark large-badge">
                                             Living Room
                                         </Badge>
@@ -301,7 +417,15 @@ export default function Carousel_one() {
                                             New
                                         </Badge>
                                         <img src={r2_c4} class="d-block w-100" alt="..." />
-                                        <h3>Green Chair</h3>
+
+                                        <div className="row">
+                                            <div className="col-9">
+                                                <h3>Green Chair </h3>
+                                            </div>
+                                            <div className="col-3">
+                                                <h5>$24</h5>
+                                            </div>
+                                        </div>
                                         <Badge className="position-absolute bottom-20 start-0 bg-dark large-badge">
                                             Living Room
                                         </Badge>
@@ -315,7 +439,7 @@ export default function Carousel_one() {
                     </Container>
                 </Carousel.Item>
             </Carousel>
-            
+
         </>
     )
 }

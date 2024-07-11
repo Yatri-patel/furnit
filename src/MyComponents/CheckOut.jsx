@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useContext } from 'react'
 
 import checkout_instore from './Images/shipping-store.svg'
 import checkout_delivery from './Images/shipping-delievery.svg'
@@ -7,10 +7,12 @@ import checkout_gpay from './Images/gpay-payment.svg'
 import checkout_paypal from './Images/paypal-payment.svg'
 import Subscribe_Now from './Subscribe_Now'
 import Footer from './Footer'
+import { CartContext } from './CartContext'
 export default function CheckOut() {
+
+    const { cartItems } = useContext(CartContext)
+    const checkouttotal = cartItems.reduce((total, item) => total + item.price, 0);
     return (
-
-
         <div className="checkout">
             <div className="section-6-wrapper">
 
@@ -84,7 +86,17 @@ export default function CheckOut() {
                                 <div className="col-12">
                                     <h2 class='fw-bold'>Your Order</h2>
                                 </div>
-                                <div className="col-8">
+                                {cartItems.map((item, index) => (
+                                    <React.Fragment key={index}>
+                                        <div className="col-9">
+                                            {item.title} {item.quantity && `x ${item.quantity}`}
+                                        </div>
+                                        <div className="col-3">
+                                            ${item.price.toFixed(2)}
+                                        </div>
+                                    </React.Fragment>
+                                ))}
+                                {/* <div className="col-8">
                                     <p>Complete set of sofa..1x</p>
                                 </div>
                                 <div className="col-4 checkout-price">
@@ -95,30 +107,30 @@ export default function CheckOut() {
                                 </div>
                                 <div className="col-4 checkout-price">
                                     <h6>$ 24.00</h6>
-                                </div>
+                                </div> */}
                                 <div className="col-12">
-                                ____________________________________________
+                                    ____________________________________________
                                 </div>
                                 <div className="col-8">
                                     <p>Subtotal</p>
                                 </div>
                                 <div className="col-4 checkout-price">
-                                    <h6>$99</h6>
+                                    <h6>${checkouttotal.toFixed(2)}</h6>
                                 </div>
                                 <div className="col-8">
                                     <p>Discount(30%)</p>
                                 </div>
                                 <div className="col-4 checkout-price discount-price ">
-                                    <h6>$29.70</h6>
+                                    <h6>${(checkouttotal * 0.3)}</h6>
                                 </div>
                                 <div className="col-12">
-                                ____________________________________________
+                                    ____________________________________________
                                 </div>
                                 <div className="col-8">
                                     <p>Total</p>
                                 </div>
                                 <div className="col-4 checkout-price">
-                                    <h6>$69.30</h6>
+                                    <h6>${checkouttotal.toFixed(2)}</h6>
                                 </div>
                                 <button class='btn btn-dark place-order btn' type="button" >Place Order</button>
                             </div>
